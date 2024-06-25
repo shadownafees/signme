@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/drive_background_image"
+        android:scaleType="centerCrop" />
+
+    <!-- White transparent gradient overlay -->
+
+    <!-- Direction heading -->
+
+    <!-- Starting Point input field -->
+
+    <!-- Destination input field -->
+
+    <!-- Start button -->
+
+    <!-- AutoCompleteTextView for Starting Point -->
+
+    <!-- AutoCompleteTextView for Destination -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_white_transparent" />
+
+    <TextView
+        android:id="@+id/textDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="126dp"
+        android:text="Direction"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Start Button -->
+
+    <!-- AutoCompleteTextView for Starting Point -->
+    <!-- Replace with your background drawable -->
+        <!-- Color of hint text -->
+
+    <!-- AutoCompleteTextView for Destination -->
+    <!-- Replace with your background drawable -->
+         <!-- Color of hint text -->
+
+    <!-- Start Button -->
+    <AutoCompleteTextView
+        android:id="@+id/startingPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDirection"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text2_background"
+        android:hint="Starting Point"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:drawableEnd="@drawable/ic_arrow_dropdown"
+        android:inputType="none" />
+    <AutoCompleteTextView
+        android:id="@+id/destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startingPoint"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text2_background"
+        android:hint="Destination"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:drawableEnd="@drawable/ic_arrow_dropdown"
+        android:inputType="none" />
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="170dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/destination"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="255dp"
+        android:background="@drawable/button_yellow_background"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
